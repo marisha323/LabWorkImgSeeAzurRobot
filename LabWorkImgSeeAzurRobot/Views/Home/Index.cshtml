@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <form enctype="multipart/form-data" method="post" asp-action="UploadImage">
+        <p>Download the image</p>
+        <input type="file" required name="image" />
+        <br />
+        <button type="submit">Save</button>
+        <a href="/Home/TestBotContent">Test Bot</a>
+    </form>
+    <a>@ViewBag.Path</a>
+   @* <form enctype="multipart/form-data" method="post" asp-action="TestBotContent">
+       
+        
+    </form>*@
+</div>
+<script>
+    console.log(ViewBag.Path); 
+</script>
